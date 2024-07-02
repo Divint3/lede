@@ -87,13 +87,13 @@ jobs:
 
       - name: Make download
         run: |
-          make download -j8 || make download -j1 V=s
+          make download -j8 PKG_HASH=skip || make download -j1 V=s PKG_HASH=skip
           rm -rf $(find ./dl/ -size -1024c)
           df -h
 
       - name: Compile firmware
         run: |
-          make -j$(nproc) || make -j1 V=s
+          make -j$(nproc) PKG_HASH=skip || make -j1 V=s PKG_HASH=skip
           echo "======================="
           echo "Space usage:"
           echo "======================="
