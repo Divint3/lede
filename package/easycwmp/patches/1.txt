@@ -1,0 +1,8 @@
+--- easycwmp-1.8.6/configure.ac	2024-07-02 20:18:06.354291944 +0800
++++ easycwmp-1.8.6/configure.ac	2024-07-02 20:18:00.502450372 +0800
+@@ -1,5 +1,4 @@
+ AC_INIT([easycwmpd], [1.8.6], [mohamed.kallel@pivasoftware.com])
+-AM_INIT_AUTOMAKE
+ AC_CONFIG_SRCDIR([src/easycwmp.c])
+ 
+ AM_INIT_AUTOMAKE([subdir-objects])
