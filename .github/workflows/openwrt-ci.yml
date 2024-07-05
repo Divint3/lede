@@ -93,7 +93,7 @@ jobs:
 
       - name: Compile firmware
         run: |
-          make -j$(nproc) PKG_HASH=skip || make -j1 V=s PKG_HASH=skip
+          make -j1 PKG_HASH=skip || make -j1 V=s PKG_HASH=skip
           echo "======================="
           echo "Space usage:"
           echo "======================="
