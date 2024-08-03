@@ -14,7 +14,7 @@ on:
     branches: 
       - master
       - builder
-      - build
+      - lede_build
         #   schedule:
         #     - cron: 0 20 * * *
   release:
@@ -35,7 +35,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: builde
+          ref: lede_build
 
       - name: Space cleanup
         env:
